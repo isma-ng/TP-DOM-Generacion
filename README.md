@@ -9,7 +9,7 @@ Aplicación web interactiva para administrar información personal con:
 - 📱 Interfaz mobile-friendly
 
 ## 🚀 Funcionalidades clave
-```plaintext
+```
 ▸ Formulario con validación integrada
 ▸ Cálculo automático de generación
 ▸ Detección de mayoría de edad (18+ años)
@@ -43,6 +43,7 @@ Aplicación web interactiva para administrar información personal con:
 - 1994-2010	Gen Z	Irreverencia
 
 // Ejemplo de uso
+```
 const personaEjemplo = new Persona(
   "Ana López", 
   28,
@@ -52,4 +53,14 @@ const personaEjemplo = new Persona(
   168,
   1995
 );
+```
+## 📂 Estructura del Proyecto
+/sistema-personas
+- ├── index.html          # Interfaz principal
+- ├── assets/             # Recursos
+- │   ├── css/styles.css  # Estilos
+- │   └── js/script.js    # Lógica
+- └── README.md           # Documentación
+
+## 📄 Licencia Este proyecto está bajo la licencia MIT.[ismael isa]
 
