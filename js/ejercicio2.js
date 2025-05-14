@@ -1,4 +1,4 @@
-   // Clase Persona
+
         class Persona {
             constructor(nombre, edad, dni, sexo, peso, altura, nacimiento) {
                 this.nombre = nombre;
@@ -52,10 +52,8 @@
             }
         }
         
-        // Variables globales
         let persona;
         
-        // Eventos
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('personaForm');
             const actionButtons = document.getElementById('actionButtons');
@@ -63,7 +61,6 @@
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Obtener valores del formulario
                 const nombre = document.getElementById('nombre').value;
                 const edad = parseInt(document.getElementById('edad').value);
                 const dni = document.getElementById('dni').value;
@@ -72,16 +69,13 @@
                 const altura = parseInt(document.getElementById('altura').value);
                 const nacimiento = parseInt(document.getElementById('nacimiento').value);
                 
-                // Crear objeto Persona
                 persona = new Persona(nombre, edad, dni, sexo, peso, altura, nacimiento);
                 
-                // Mostrar botones de acción
                 actionButtons.style.display = "flex";
                 
                 alert("Persona creada exitosamente!");
             });
             
-            // Botón Mostrar Generación
             document.getElementById('mostrarGeneracion').addEventListener('click', function() {
                 if (persona) {
                     alert(persona.mostrarGeneracion());
@@ -89,8 +83,7 @@
                     alert("Primero debes crear una persona");
                 }
             });
-            
-            // Botón ¿Mayor de Edad?
+
             document.getElementById('esMayorDeEdad').addEventListener('click', function() {
                 if (persona) {
                     alert(persona.esMayorDeEdad());
@@ -99,7 +92,6 @@
                 }
             });
             
-            // Botón Mostrar Datos
             document.getElementById('mostrarDatos').addEventListener('click', function() {
                 if (persona) {
                     alert(persona.mostrarDatos());
